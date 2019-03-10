@@ -1,60 +1,125 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>Hexal</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-      <div id="hexagon">
-          <div id="hexagon-image">
-          </div>
-      </div>
-      <nav>
-        <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Get in touch</a></li>
-      </nav>
-    </header>
-    <div id="separator-div">
-        <hr id="sep-left" class="separator">
-        <hr id="sep-right" class="separator">
+<head>
+  <meta charset="utf-8" />
+  <title>Hexal</title>
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div id="hexagon">
+      <div id="hexagon-image"></div>
     </div>
-    <main>
-      <div class="images">
-            <div class="row">
-                    <div id="hex-1-1" class="hex"></div>
-                    <div id="hex-1-2" class="hex"></div>
-                    <div id="hex-1-3" class="hex"></div>
-                    <div id="hex-1-4" class="hex"></div>
-                </div>
-                <div class="row">
-                        <div id="hex-2-1" class="hex"></div>
-                        <div id="hex-2-2" class="hex"></div>
-                        <div id="hex-2-3" class="hex"></div>
-                        <div id="hex-2-4" class="hex"></div>
-                        <div id="hex-2-5" class="hex"></div>
-                </div>
-                <div class="row">
-                        <div id="hex-3-1" class="hex"></div>
-                        <div id="hex-3-2" class="hex"></div>
-                        <div id="hex-3-3" class="hex"></div>
-                        <div id="hex-3-4" class="hex"></div>
-                </div>
+    <nav>
+      <ul>
+        <li><a href="#">Blog</a></li>
+
+        <li><a href="#">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="separator-div">
+    <hr class="separator sep-left" />
+    <hr class="separator sep-right" />
+  </div>
+  <section class="main">
+    <div class="images">
+      <div class="row">
+        <div id="hex-1-1" class="hex">
+          <img src="./assets/img1.png" alt="Portfolio project 1 screenshot" />
+        </div>
+        <div id="hex-1-2" class="hex">
+          <img src="./assets/img2.png" alt="Portfolio project 2 screenshot" />
+        </div>
+        <div id="hex-1-3" class="hex">
+          <img src="./assets/img3.png" alt="Portfolio project 3 screenshot" />
+        </div>
+        <div id="hex-1-4" class="hex">
+          <img src="./assets/img4.png" alt="Portfolio project 4 screenshot" />
+        </div>
       </div>
-      <hr class="separator">
-      <div class="about"></div>
-      <div class="contact"></div>
-    </main>
-    <footer></footer>
-    
-  </body>
+      <div class="row row-offset">
+        <div id="hex-2-1" class="hex">
+          <img src="./assets/img_2_1.png" alt="Portfolio project 5 screenshot" />
+        </div>
+        <div id="hex-2-2" class="hex">
+          <img src="./assets/img_2_2.png" alt="Portfolio project 6 screenshot" />
+        </div>
+        <div id="hex-2-3" class="hex">
+          <img src="./assets/img_2_3.png" alt="Portfolio project 7 screenshot" />
+        </div>
+        <div id="hex-2-4" class="hex">
+          <img src="./assets/img_2_4.png" alt="Portfolio project 8 screenshot" />
+        </div>
+        <div id="hex-2-5" class="hex">
+          <img src="./assets/img_2_5.png" alt="Portfolio project 9 screenshot" />
+        </div>
+      </div>
+      <div class="row row-offset">
+        <div id="hex-3-1" class="hex">
+          <img src="./assets/img_3_1.png" alt="Portfolio project 10 screenshot" />
+        </div>
+        <div id="hex-3-2" class="hex">
+          <img src="./assets/img_3_2.png" alt="Portfolio project 11 screenshot" />
+        </div>
+        <div id="hex-3-3" class="hex">
+          <img src="./assets/img_3_3.png" alt="Portfolio project 12 screenshot" />
+        </div>
+        <div id="hex-3-4" class="hex">
+          <img src="./assets/img_3_4.png" alt="Portfolio project 13 screenshot" />
+        </div>
+      </div>
+    </div>
+  </section>
+    <hr class="separator" />
+    <section class="about">
+      <div class="vl vl-left"></div>
+      <div class="photo">
+        <img src="./assets/author.png" />
+      </div>
+      <div class="description">
+        <h1 class="name">Smith Anderson</h1>
+        <h2 class="title">Illustrator & Character Designer</h2>
+        <p class="presentation">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          porttitor, nibh at sagittis tristique, enim magna pretium augue,
+          eget consectetur sem dui non urna. Integer gravida, diam congue
+          molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit
+          vel metus. Morbi egestas sit amet velit eget venenatis. Mauris
+          porttitor, nibh at sagittis tristique, enim magna pretium augue,
+          eget consectetur sem dui non urna
+        </p>
+        <br />
+        <br />
+        <br />
+      </div>
+      <div class="vl vl-right"></div>
+    </section>
+    <section class="contact">
+      <div class="contact-form">
+        <h1 class="message1">Get in touch</h1>
+        <h3 class="message2">In order to get in touch use the contact form below:</h3>
+        <input type="text" required placeholder="Name(Required)" name="name" class="input-field" />
+        <input type="email" required placeholder="Email(Required)" name="email" class="input-field" />
+        <input type="text" required placeholder="Subject" name="name" class="input-field" />
+        <textarea name="messsage" placeholder="Write your message here..." class="input-field textarea-field" minlength="6"></textarea>
+      </div>
+      <div class="contact-data">
+        <p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit
+          amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
+      </div>
+    </section>
+ 
+  <footer></footer>
+</body>
+
 </html>
