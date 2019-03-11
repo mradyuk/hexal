@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400");
-@import url("reset.css");
 
 html,
 body {
@@ -16,7 +15,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
+
 footer {
   background-color: #222222;
   width: 100%;
@@ -32,6 +34,7 @@ main {
 .images {
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .about {
@@ -121,12 +124,22 @@ main {
 .message1{
   color: #e0e0e0;
   font-family: "Maven Pro Regular", sans-serif;
+  width: 168px;
+  height: 22px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 4.56px;
 
 }
 
 .message2{
   color: #e0e0e0;
   font-family: "Maven Pro Regular", sans-serif;
+  width: 421px;
+  height: 17px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.56px;
   
 }
 
@@ -214,12 +227,60 @@ div .circle {
   height: 203px;
 }
 
+.cell{
+  width: 180px;
+  height: 203px;
+  background:transparent;
+  position: relative;
+  overflow: hidden;
+ /* margin:  0 auto*/
+
+  margin-left: 15px;
+  margin-bottom: -37px;
+}
+
+.cell-green{
+  background:#2eb398;
+}
+.cell img{
+  width: 180px;
+  height: 203px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+}
+.cell:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 54px solid transparent;
+}
+.cell:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 54px solid transparent
+}
+
 .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 
-.row-offset {
-  margin-top: -30px;
+.row-even{
+  margin-left: 53px;
 }
