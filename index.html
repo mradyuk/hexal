@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <title>Hexal</title>
-
+  <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  
+
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
     <div id="hexagon">
@@ -24,7 +24,7 @@
       <ul>
         <li><a href="#">Blog</a></li>
 
-        <li><a href="#">Get in touch</a></li>
+        <li><a href="#contact">Get in touch</a></li>
       </ul>
     </nav>
   </header>
@@ -33,8 +33,9 @@
     <hr class="separator sep-right" />
   </div>
   <section class="main">
-    <div class="images">
+    <div class="images" id="portfolio">
       <div class="row">
+        <div class="vl-left"></div>
         <div id="hex-1-1" class="cell">
           <img src="./assets/img1.png" alt="Portfolio project 1 screenshot" />
         </div>
@@ -47,6 +48,7 @@
         <div id="hex-1-4" class="cell">
           <img src="./assets/img4.png" alt="Portfolio project 4 screenshot" />
         </div>
+        <div class="vl-right"></div>
       </div>
       <div class="row even">
         <div id="hex-2-1" class="cell">
@@ -66,6 +68,7 @@
         </div>
       </div>
       <div class="row ">
+        <div class="vl-left"></div>
         <div id="hex-3-1" class="cell">
           <img src="./assets/img_3_1.png" alt="Portfolio project 10 screenshot" />
         </div>
@@ -78,48 +81,64 @@
         <div id="hex-3-4" class="cell">
           <img src="./assets/img_3_4.png" alt="Portfolio project 13 screenshot" />
         </div>
+        <div class="vl-right"></div>
       </div>
     </div>
+    <div class="paging">
+      <div class="paging-box"></div>
+      <div class="paging-box"></div>
+      <div class="paging-box"></div>
+      <div class="paging-box"></div>
+      <div class="paging-box"></div>
+    </div>
   </section>
-    <hr class="separator" />
-    <section class="about">
-      <div class="vl vl-left"></div>
+  <hr class="separator" />
+  <section class="about" id="about">
+
+    <div class="info">
+
       <div class="cell cell-green">
         <img src="./assets/author.png" />
       </div>
       <div class="description">
         <h1 class="name">Smith Anderson</h1>
         <h2 class="title">Illustrator & Character Designer</h2>
+        <br>
         <p class="presentation">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          porttitor, nibh at sagittis tristique, enim magna pretium augue,
-          eget consectetur sem dui non urna. Integer gravida, diam congue
-          molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit
-          vel metus. Morbi egestas sit amet velit eget venenatis. Mauris
-          porttitor, nibh at sagittis tristique, enim magna pretium augue,
-          eget consectetur sem dui non urna
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim
+          magna <br>
+          pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio
+          rhoncus <br>
+          turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh
+          at <br>
+          sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna
         </p>
-        <br />
-        <br />
-        <br />
       </div>
-      <div class="vl vl-right"></div>
-    </section>
-    <section class="contact">
-      <div class="contact-form">
-        <h1 class="message1">Get in touch</h1>
-        <h3 class="message2">In order to get in touch use the contact form below:</h3>
-        <input type="text" required placeholder="Name(Required)" name="name" class="input-field" />
-        <input type="email" required placeholder="Email(Required)" name="email" class="input-field" />
-        <input type="text" required placeholder="Subject" name="name" class="input-field" />
-        <textarea name="messsage" placeholder="Write your message here..." class="input-field textarea-field" minlength="6"></textarea>
-      </div>
-      <div class="contact-data">
-        <p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit
-          amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
-      </div>
-    </section>
- 
+
+    </div>
+
+  </section>
+  <section class="contact" id="contact">
+    <div class="contact-form">
+      <h1 class="message1">Get in touch</h1>
+      <br>
+      <h3 class="message2">In order to get in touch use the contact form below:</h3>
+      <br>
+      <input type="text" required placeholder="Name(Required)" name="name" class="input-field" />
+      <input type="email" required placeholder="Email(Required)" name="email" class="input-field" />
+      <input type="text" required placeholder="Subject" name="name" class="input-field" />
+      <textarea name="messsage" placeholder="Write your message here..." class="input-field textarea-field" minlength="6"></textarea>
+    </div>
+    <div class="contact-data">
+      <p><span class="strong">Quisque Hendrerit:</span> purus dapibus, <br>
+        ornare nibh vitae, viverra <br>
+        nibh. Fusce vitae aliquam tellus.<br>
+        Proin sit amet volutpat libero.<br>
+        Nulla sed nunc et tortor luctus<br> 
+        faucibus morbi vitae. </p>
+    </div>
+  </section>
+
   <footer></footer>
 </body>
 
